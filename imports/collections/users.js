@@ -1,4 +1,4 @@
 // Declare our collection
-import { Mongo } from 'meteor/mongo'
+import { Mongo } from 'meteor/mongo';
 
-export const Users = new Mongo.Collection('users')
+export const Users = new Mongo.Collection('users');
