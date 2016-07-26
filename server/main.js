@@ -20,6 +20,6 @@ Meteor.startup(() => {
 
 
   Meteor.publish('users', () => {
-    return Users.find({});
+    return Users.find({}, { limit: 20 });
   });
 });
