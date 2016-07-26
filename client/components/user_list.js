@@ -8,7 +8,7 @@ const UserList = (props) => {
   return (
     <div>
       <div className="user-list">
-        {props.users.map(user => <UserDetail />)}
+        {props.users.map(user => <UserDetail user={user} />)}
       </div>
     </div>
   );

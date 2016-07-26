@@ -8,7 +8,7 @@ Meteor.startup(() => {
   //check to see if data exists in the collection
   console.log(Users.find({}).count());
   if (!Users.find({}).count()) {
-    _.times(5000, () => {
+    _.times(5000, () => { //works like a for loop
       const { name, email, phone } = helpers.createCard(); // random contact card containing many properties
 
       Users.insert({
