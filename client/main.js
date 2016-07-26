@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+import UserList from './components/user_list.js'
 
 const App = () => {
   return (
-    <div>Hello There </div>
+    <div>
+      <UserList />
+    </div>
   );
-  
+
 };
 
 Meteor.startup(() => {
