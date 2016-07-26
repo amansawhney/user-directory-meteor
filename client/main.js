@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-Meteor.startup(() => {
+const App = () => {
+  return (
+    <div>Hello There </div>
+  );
+  
+};
 
+Meteor.startup(() => {
+  ReactDOM.render(<App />, document.querySelector('.container'));
 });
