@@ -1,13 +1,14 @@
 import React from 'react';
-import {createContainer} from 'meteor/react-meteor-data'
-import {Users} from '../../imports/collections/users'
+import {createContainer} from 'meteor/react-meteor-data';
+import {Users} from '../../imports/collections/users';
+import UserDetail from './user_detail';
 
 const UserList = (props) => {
   console.log(props.users)
   return (
     <div>
       <div className="user-list">
-        User List
+        {props.users.map(user => <UserDetail />)}
       </div>
     </div>
   );
