@@ -1,10 +1,25 @@
 # user-directory-meteor
+
 This is another app I am developing to learn how to use Meteor.
 
 ## Objective
+
 Create an application that displays a list of users with the ability to load more users
 
 ## Challenges
+
+--------------------------------------------------------------------------------
+
+Completed
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Need To Do
+
+--------------------------------------------------------------------------------
+
 - Need a place to store data
 - Need a way to generate this data
 - Must assume that we have thousands of entries and we only want to send a small subset to the client at any time.
