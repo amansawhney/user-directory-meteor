@@ -17,4 +17,9 @@ Meteor.startup(() => {
       });
     });
   }
+
+
+  Meteor.publish('users', () => {
+    return Users.find({});
+  });
 });
