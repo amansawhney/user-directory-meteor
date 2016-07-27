@@ -6,8 +6,14 @@ import UserDetail from './user_detail';
 const PER_PAGE = 20;
 
 class UserList extends Component {
+  componentWillMount() {
+    this.page = 1;
+  }
+
   handleButtonClick() {
-     Meteor.subscribe('users', 40)
+    console.log("hi");
+     this.page += 1;
+     Meteor.subscribe('users', this.page*PER_PAGE);
   }
   render() {
     return (
@@ -15,7 +21,7 @@ class UserList extends Component {
         <div className="user-list">
           {this.props.users.map(user => <UserDetail user={user} key={user._id} />)}
         </div>
-        <button onClick = {handleButtonClick} className = "btn btn-lg btn-primary">
+        <button onClick = {this.handleButtonClick.bind(this)} className = "btn btn-lg btn-primary">
           Load More..
         </button>
 

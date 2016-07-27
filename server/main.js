@@ -19,7 +19,7 @@ Meteor.startup(() => {
   }
 
 
-  Meteor.publish('users', () => {
-    return Users.find({}, { limit: 20 });
+  Meteor.publish('users', (per_page) => {
+    return Users.find({}, { limit: per_page });
   });
 });
