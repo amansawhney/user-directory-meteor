@@ -2,6 +2,9 @@
 
 This is another app I am developing to learn how to use Meteor.
 
+## Demo
+https://user-directory-meteor.herokuapp.com/
+
 ## Objective
 
 Create an application that displays a list of users with the ability to load more users
